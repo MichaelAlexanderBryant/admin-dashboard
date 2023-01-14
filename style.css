@@ -21,14 +21,14 @@
 #sidebar {
     background-color: #1992d4;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     grid-column: 1 / 2;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr 50%;
 }
 
 #logo {
-    flex: 2;
+    grid-row: 1 / 2;
 }
 
 ul {
@@ -36,7 +36,7 @@ ul {
 }
 
 #menu-top {
-    flex: 5;
+    grid-row: 2 / 3;
 }
 
 #menu-top li {
@@ -44,7 +44,11 @@ ul {
 }
 
 #menu-bottom {
-    flex: 14;
+    grid-row: 3 / 4;
+}
+
+#menu-space {
+    grid-row: 4 / 5;
 }
 
 #menu-bottom li {
@@ -56,7 +60,7 @@ ul {
     border: 1px solid red;
     grid-column: 2 / 6;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     
 }
 
@@ -71,7 +75,8 @@ ul {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    /* justify-items: center; */
+    justify-content: center;
+    padding-top: 10px;
 }
 
 form {
@@ -108,8 +113,13 @@ input {
 
 }
 
+h1 {
+    font-size: larger;
+}
+
 #post-buttons {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid salmon;
 }
@@ -127,4 +137,51 @@ input {
 #content {
     background-color: #e2e8f0;
     grid-row: 2 / 10;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#content-left {
+    border: 1px solid red;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 10% 3fr 10%;
+}
+
+#cards-header {
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+#cards-header span {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding-left: 15px;
+}
+
+#cards {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 15px 0 15px;
+}
+
+.card {
+    background-color: white;
+}
+
+#space {
+    grid-row: 3 / 4;
+}
+
+#cards-header, #space, #cards {
+    border: 1px solid black;
+}
+
+#content-right {
+    border: 1px solid purple;
+    grid-column: 2 / 3;
 }
