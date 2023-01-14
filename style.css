@@ -186,6 +186,47 @@ h1 {
     background-color: white;
     border-left: 10px solid #f0b429;
     border-radius: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.project-text {
+    grid-row: 1 / 2;
+    display:grid;
+    padding: 10px 50px 0px 20px;
+}
+
+.project-title {
+    position: relative;
+}
+
+.project-title span {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    font-weight:bolder;
+    font-size: 1.15em;
+}
+
+.project-bottom {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-space {
+    grid-column: 1 / 2;
+
+}
+
+.project-buttons {
+    grid-column: 2 / 3;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
 }
 
 #projects-space {
