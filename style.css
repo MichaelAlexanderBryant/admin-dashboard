@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #container {
@@ -13,23 +14,117 @@
     right: 0;
     bottom: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 5fr;
 }
 
+/* sidebar */
 #sidebar {
     background-color: #1992d4;
+    color: white;
+    font-size: 25px;
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
 }
 
+#logo {
+    flex: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu-top {
+    flex: 5;
+}
+
+#menu-top li {
+    margin: 10px 0;
+}
+
+#menu-bottom {
+    flex: 14;
+}
+
+#menu-bottom li {
+    margin: 10px 0;
+}
+
+/* right side */
+#right-side {
+    border: 1px solid red;
+    grid-column: 2 / 6;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    
+}
+
+/* header */
 #header {
     background-color: white;
-    grid-column: 2 / 4;
     grid-row: 1 / 2;
+    display:grid;
 }
 
+#header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+form {
+    grid-column: 1 / 2;
+    border: 1px solid green;
+    padding-left: 50px;
+}
+
+input {
+    height: 20px;
+    width: 75%;
+    background-color: #e2e8f0;
+    border-radius: 25px;
+}
+
+#user-profile {
+    border: 1px solid purple;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    
+}
+
+#header-bottom {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    align-items: center;
+}
+
+#header-bottom-left {
+    display: grid;
+    grid-template-columns: 1fr 85%;
+    align-items: center;
+
+}
+
+#post-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid salmon;
+}
+
+#new, #upload, #share {
+    font-size: 15;
+    color: white;
+    background-color: #1992d4;
+    border-radius: 25px;
+    height: 35px;
+    width: 70%;
+}
+
+/* content */
 #content {
     background-color: #e2e8f0;
-    grid-column: 2 / 4;
-    grid-row: 2 / 4;
+    grid-row: 2 / 10;
 }
