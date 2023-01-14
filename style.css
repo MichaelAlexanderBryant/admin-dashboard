@@ -71,6 +71,7 @@ ul {
     background-color: white;
     grid-row: 1 / 2;
     display:grid;
+    font-weight: bolder;
 }
 
 #header-top {
@@ -128,22 +129,28 @@ input {
     display: grid;
     grid-template-columns: 1fr 85%;
     align-items: center;
+    padding-left: 20px;
+}
 
+
+#greeting p {
+    margin-bottom: -15px;
 }
 
 h1 {
-    font-size: larger;
+    font-size: 25px;
 }
 
 #post-buttons {
     display: grid;
-    justify-items: center;
+    justify-items: left;
     grid-template-columns: repeat(3, 1fr);
     /* border: 1px solid salmon; */
 }
 
 #new, #upload, #share {
-    font-size: 15;
+    font-size: 15px;
+    font-weight: bolder;
     color: white;
     background-color: #1992d4;
     border-radius: 25px;
