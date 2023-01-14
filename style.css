@@ -148,19 +148,19 @@ h1 {
     grid-template-rows: 10% 3fr 10%;
 }
 
-#cards-header {
+#projects-header {
     grid-row: 1 / 2;
     position: relative;
 }
 
-#cards-header span {
+#projects-header span {
     position: absolute;
     bottom: 5px;
     left: 0;
     padding-left: 15px;
 }
 
-#cards {
+#projects {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -169,19 +169,69 @@ h1 {
     padding: 0 15px 0 15px;
 }
 
-.card {
+.project {
     background-color: white;
 }
 
-#space {
+#projects-space {
     grid-row: 3 / 4;
 }
 
-#cards-header, #space, #cards {
+#projects-header, #project-space, #projects {
     border: 1px solid black;
 }
 
 #content-right {
     border: 1px solid purple;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 10% 3fr 10% 3fr 10%;
+}
+
+#announcements-header {
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+#announcements-header span {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding-left: 15px;
+}
+
+#announcements {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 15px;
+    background-color: white;
+}
+
+#trending-header {
+    grid-row: 3 / 4;
+    position: relative;
+}
+
+#trending-header span {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding-left: 15px;
+}
+
+#trending {
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 15px;
+    background-color: white;
+}
+
+#trending-space {
+    grid-row: 5 / 6;
+}
+
+#announcements-header, #announcements, #trending-header, #trending-space, #trending {
+    border: 1px solid black;
 }
