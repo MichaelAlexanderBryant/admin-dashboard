@@ -81,11 +81,19 @@ ul {
     padding-top: 10px;
 }
 
+
 form {
     grid-column: 1 / 2;
     /* border: 1px solid green; */
     padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 95%;
+    align-items: center;
 }
+
+/* #search {
+
+} */
 
 input {
     border: 0px;
