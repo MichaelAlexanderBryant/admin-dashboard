@@ -57,7 +57,7 @@ ul {
 
 /* right side */
 #right-side {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-column: 2 / 6;
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -81,7 +81,7 @@ ul {
 
 form {
     grid-column: 1 / 2;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     padding-left: 50px;
 }
 
@@ -93,7 +93,7 @@ input {
 }
 
 #user-profile {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
@@ -121,7 +121,7 @@ h1 {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
 
 #new, #upload, #share {
@@ -142,7 +142,7 @@ h1 {
 }
 
 #content-left {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 10% 3fr 10%;
@@ -165,24 +165,26 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
     padding: 0 15px 0 15px;
 }
 
 .project {
     background-color: white;
+    border-left: 10px solid #f0b429;
+    border-radius: 10px;
 }
 
 #projects-space {
     grid-row: 3 / 4;
 }
 
-#projects-header, #project-space, #projects {
+/* #projects-header, #project-space, #projects {
     border: 1px solid black;
-}
+} */
 
 #content-right {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 10% 3fr 10% 3fr 10%;
@@ -204,8 +206,9 @@ h1 {
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    margin: 15px;
+    margin: 0px 30px 0px 15px;
     background-color: white;
+    border-radius: 10px;
 }
 
 #trending-header {
@@ -224,14 +227,15 @@ h1 {
     grid-row: 4 / 5;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    margin: 15px;
+    margin: 0px 30px 0px 15px;
     background-color: white;
+    border-radius: 10px;
 }
 
 #trending-space {
     grid-row: 5 / 6;
 }
 
-#announcements-header, #announcements, #trending-header, #trending-space, #trending {
+/* #announcements-header, #announcements, #trending-header, #trending-space, #trending {
     border: 1px solid black;
-}
+} */
