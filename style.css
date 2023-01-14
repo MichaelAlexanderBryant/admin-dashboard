@@ -107,8 +107,15 @@ input {
     /* border: 1px solid purple; */
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 20% 20% 33%;
+    align-items: center;
+    justify-items: end;
     
+}
+
+#name {
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 #header-bottom {
